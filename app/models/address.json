@@ -1,0 +1,111 @@
+{
+  
+  "customer_order_id": "CO-2750",
+  "order_number": "ORD-20250610-0001",
+  "customer_id": "cust001",
+  "order_type": "customer",
+  "created_at": { "$date": "2025-06-10T08:00:00Z" },
+  "updated_at": { "$date": "2025-06-10T08:00:00Z" },
+  "status": "pending",
+  "total_amount": 250,
+  "payment": {
+    "method": "credit_card",
+    "status": "paid",
+    "amount_paid": 250
+  },
+  "is_multi_address": false,
+  "shipping_address_id": "ADDR-123",
+  "items": [
+    {
+      "product_id": "prod001",
+      "name": "Widget A",
+      "quantity": 2,
+      "unit_price": 50.0,
+      "total_price": 100.0
+    }
+  ],
+  "promotions": [
+    {
+      "code": "WELCOME10",
+      "discount": 10
+    }
+  ],
+  "order_notes_exist": false,
+  "additional_info": {
+    "gift_wrap": false
+  },
+  "fulfillment_id": "ful123",
+  "rec_created_at": { "$date": "2025-06-10T08:00:00Z" },
+  "rec_updated_at": { "$date": "2025-06-10T08:00:00Z" },
+
+  "customer_order_address": [
+    {
+      "collection": "CustomerOrdersAddress",
+      "id": { "$oid": "6836bc2729b990f58d3edc98" }
+    }
+  ],
+
+  "customer_order_audit": [
+    {
+      "collection": "CustomerOrderAudit",
+      "id": { "$oid":"6835c63adeb489851d8c0b1a"}
+    }
+  ],
+
+  "customer_order_history": [
+    {
+      "collection": "CustomerOrderHistory",
+      "id": { "$oid":"6835dab6880bc223f002a5a5"}
+    }
+  ],
+
+  "customer_order_item": [
+    {
+      "collection": "CustomerOrderItem",
+      "id": { "$oid":"6836b99529b990f58d3edc8e"}
+    }
+  ],
+
+  
+
+  "customer_inventory": [
+    {
+      "collection": "InventoryAllocation",
+      "id": { "$oid":"6835e035768c8dadb4dff3cd"}
+    }
+  ],
+
+  "inventory_record": [
+    {
+      "collection": "InventoryRecords",
+      "id": { "$oid": "6836bb1729b990f58d3edc94" }
+    }
+  ],
+
+  "order_fullfilment": [
+    {
+      "collection": "OrderFullfillments",
+      "id": { "$oid": "6836ba9429b990f58d3edc92" }
+    }
+  ],
+
+  "order_metadata": [
+    {
+      "collection": "OrderMetadata",
+      "id": { "$oid": "6835e83d34f76cb232d67e0b" }
+    }
+  ],
+
+  "order_payment": [
+    {
+      "collection": "OrderPayment",
+      "id": { "$oid": "6836b69429b990f58d3edc7a" }
+    }
+  ],
+  "products": [
+    {
+      "collection": "Products",
+      "id": { "$oid": "683571981e41e821f45ae5c9" }
+    }
+  ]
+}
